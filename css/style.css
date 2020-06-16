@@ -1,5 +1,6 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
+    background: #dfdfdf;
 }
 
 .back {
@@ -11,8 +12,6 @@ body {
     padding: 0 15px;
     margin: 0 auto;
     max-width: 1100px;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -29,14 +28,8 @@ header {
     justify-content: center;
 }
 
-header .menu {
-    margin: 0 auto;
-    padding: 0;
-    display: block;
-}
-
-header .menu li {
-    display: inline-block;
+nav .menu {
+    display: flex;
 }
 
 header .menu li a {
@@ -44,7 +37,54 @@ header .menu li a {
     color: black;
 }
 
-.logo {
+header .menu li a:hover {
+    color: #207561;
+}
+
+.logo a {
+    color: #207561;
+}
+
+.introdução {
+    height: 500px;
+    display: flex;
+    line-height: 56px;
+    /*Espaçamento entre as linhas de um texto*/
+    margin-top: 2em;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    margin: 0 3rem;
+}
+
+.introdução h1 {
+    color: #207561;
+    font-size: 3em;
+}
+
+.introdução p {
+    font-size: 1.5em;
+}
+
+.btnRadiusGreen {
+    background-color: #207561;
+    width: 100%;
+    max-width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    height: auto;
+    max-width: 300px;
 }
